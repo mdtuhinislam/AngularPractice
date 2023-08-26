@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { CreateStudentComponent } from './create-student/create-student.component';
+import { FormsModule, FormControl,ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [	
@@ -10,7 +11,10 @@ import { CreateStudentComponent } from './create-student/create-student.componen
       CreateStudentComponent
    ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    FormControl,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
