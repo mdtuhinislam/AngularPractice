@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { CreateStudentComponent } from './create-student/create-student.component';
-import { FormsModule, FormControl,ReactiveFormsModule } from '@angular/forms';
+import {ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [	
@@ -11,10 +11,8 @@ import { FormsModule, FormControl,ReactiveFormsModule } from '@angular/forms';
       CreateStudentComponent
    ],
   imports: [
-    BrowserModule,
-    FormsModule,
-    FormControl,
-    ReactiveFormsModule
+    BrowserModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
