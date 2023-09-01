@@ -6,7 +6,7 @@
   </div>
 </div>
 <div class="main-body ">
-  <form>
+  <form formGroup="userForm" (ngSubmit)="onSubmit()">
     <div class="row">
       <div class="col-lg-2"></div>
       <div class="col-lg-4">
@@ -27,26 +27,26 @@
           <input type="text" class="form-control" id="mobile" placeholder="Mobile" formControlName="mobile">
         </div>
         <div>
-          <button class="d-inline p-2 btn btn-primary float-right">Submit</button>
+          <button type="submit" class="d-inline p-2 btn btn-primary float-right">Submit</button>
           <button class=" ml-3 d-inline p-2 btn btn-danger float-right">Reset</button>
         </div>
       </div>
       <div class="col-lg-4">
         <div class="form-group">
           <label for="presentAddress">Present Address:</label>
-          <input type="text" class="form-control" id="presentAddress" formControlName="presentAddress" placeholder="Present Address">
+          <input type="text" class="form-control" id="presentAddress" formControlName="presentAddress" placeholder="Present Address" formControlName="presentAddress">
         </div>
         <div class="form-group">
           <label for="parmanentAddress">Permanant Address:</label>
-          <input type="text" class="form-control" id="parmanentAddress" formControlName="parmanentAddress" placeholder="Permanant Address">
+          <input type="text" class="form-control" id="parmanentAddress" formControlName="parmanentAddress" placeholder="Permanant Address" formControlName="parmanentAddress">
         </div>
         <div class="form-group">
           <label for="parentsMobile">Parents Mobile:</label>
-          <input type="text" class="form-control" id="parentsMobile" formControlName="parentsMobile" placeholder="Parents Mobile">
+          <input type="text" class="form-control" id="parentsMobile" formControlName="parentsMobile" placeholder="Parents Mobile" formControlName="parentsMobile">
         </div>
         <div class="form-group">
           <label for="parentsEmail">Parents Email:</label>
-          <input type="email" class="form-control" id="parentsEmail" formControlName="parentsEmail" placeholder="Parents Email">
+          <input type="email" class="form-control" id="parentsEmail" formControlName="parentsEmail" placeholder="Parents Email" formControlName="parentsEmail">
         </div>
       </div>
       <div class="col-lg-2"></div>

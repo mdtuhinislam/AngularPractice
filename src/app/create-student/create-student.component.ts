@@ -19,7 +19,11 @@ export class CreateStudentComponent implements OnInit {
       name:[''],
       address:[''],
       email:[''],
-      mobile:['']
+      mobile:[''],
+      presentAddress:[''],
+      parmanentAddress:[''],
+      parentsMobile:[''],
+      parentsEmail:['']
 
     })
     
@@ -27,6 +31,9 @@ export class CreateStudentComponent implements OnInit {
   displayNotification:boolean = false;
   closNotification(){
     this.displayNotification = true;
+  }
+  onSubmit(){
+    console.log(this.userForm.value);
   }
 
 }

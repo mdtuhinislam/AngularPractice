@@ -8,7 +8,7 @@ export class StudentServiceService {
 
 constructor() { }
 public Save(student:Student){
-  
+  console.log(student);
 
 }
 
